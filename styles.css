@@ -1,0 +1,201 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #070006;
+}
+
+.container {
+    background: linear-gradient(45deg,#e7d6e5, #c79fcc, #b365a5, #d038b7, #752669, #3b0140, #720272);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+img {
+    width: 90%; /* Makes the image as wide as its container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Rounds the corners */
+    border: 2px solid #ccc; /* Adds a border */
+    align-items: center;
+  }
+
+form {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    color: #070006;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#tipAmount, #totalWithTip {
+    background-color: #e9e9e9;
+    
+}
+
+.error-message {
+    color: rgb(197, 234, 228);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pumpkin{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    animation: fall 5s;
+  }
+
+.diwali{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    animation: fall 5s ;
+  }
+
+  .diwali-text{
+    color: aliceblue;
+    position: absolute;
+    bottom: 310px;
+    left: 40px;
+    animation: fall 5s ;
+
+  }
+  .pumpkin-text{
+    color:aliceblue;
+    position: absolute;
+    bottom: 310px;
+    right: 30px;
+    animation: fall 5s ;
+
+  }
+
+@keyframes fall {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 60vh;
+    }
+    
+}
+
+/* For Small screens (480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    form{
+        padding: 10px;
+    }
+
+    label, input[type="text"], output {
+        font-size: 0.8rem;
+    }
+
+    .pumpkin, .diwali {
+        width: 100px; 
+        height: 100px; 
+    } 
+    .diwali-text { 
+        bottom: 160px; 
+        left: 20px; 
+        font-size: 0.8rem;
+    } 
+    .pumpkin-text {
+        bottom: 160px; 
+        right: 20px; 
+        font-size: 0.8rem;
+
+    }
+}
+
+/* medium screens */
+  @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    label, input[type="text"], output {
+        font-size: 1rem;
+    }
+    .pumpkin, .diwali {
+        width: 200px; 
+        height: 200px; 
+    } 
+    .diwali-text { 
+        bottom: 210px; 
+        left: 30px; 
+        font-size: 0.9rem;
+
+    } 
+    .pumpkin-text {
+        bottom: 210px; 
+        right: 30px; 
+        font-size: 0.9rem;
+
+    }
+}
+/* Larger devices */
+@media (min-width: 769px) {
+    .container {
+        padding: 25px;
+        max-width: 600px;
+    }
+        label, input[type="text"], output {
+        font-size: 1.2rem;
+    }
+    .pumpkin, .diwali {
+        width: 300px; 
+        height: 300px; 
+    } 
+    .diwali-text { 
+        bottom: 310px; 
+        left: 40px; 
+        font-size: 1rem;
+
+    } 
+    .pumpkin-text {
+        bottom: 310px; 
+        right: 40px;
+        font-size: 1rem;
+ 
+    }
+}
+
+
+
+  
+  

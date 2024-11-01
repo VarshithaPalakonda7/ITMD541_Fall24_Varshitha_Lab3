@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="diwali-text">Happy Diwali!</h1>
+    <h1 class="pumpkin-text">Happy Halloween!</h1>
+    <div class="container">
+            <h4> ITMD 541 - Lab 3 - Varshitha Palakonda</h4>
+            <img src="assests\WhatsApp Image 2024-10-29 at 01.32.29_416447eb.jpg"><br><br>
+            <form id="tipForm">
+                <label for="total">Bill Total:($)</label>
+                <input type="text" id="total" name="total" placeholder="Enter Bill Total" required>
+                <div id="error-message" class="error-message"></div>
+                <br>
+
+                <label for="tip">Tip:</label>
+                <input type="range" id="tip" name="tip" min="0" max="100" value="15">
+                <output id="tipPercentValue" id="tipPercentValue">50%</output><br>
+
+                <label for="tipAmount">Tip Amount:($)</label>
+                <input type="text" id="tipAmount" name="tipAmount" disabled placeholder="0.00"><br>
+
+                <label for="totalWithTip">Total Bill with Tip:($)</label>
+                <input type="text" id="totalWithTip" name="totalWithTip" disabled placeholder="0.00"><br>
+            </form>
+    </div>
+    <img class="pumpkin" src="assests/pumpkin1.jpeg">
+    <img class="diwali" src="assests/diwali.jpg">
+
+
+    <script src="script.js"></script>
+</body>
+</html>
